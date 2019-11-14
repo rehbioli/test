@@ -30,7 +30,7 @@
 }
 /* Jumbotron */
 #hero-banner {
-	background-image: url("/images/sample1.png");
+	background: url("../images/sample1.png");
 	min-height: 630px;
 	max-width: 100%;
 	background-repeat: no-repeat;
@@ -58,8 +58,12 @@
 	font-size: 22px;
 	
 }
-#hero-banner .top-nav li a{
-	text-emphasis: none;
-	color: #000000;
+#hero-banner .top-nav ul a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0 2%;
+    margin-left: 4em;
+}#hero-banner .top-nav ul a:hover{
+	color: #367fa9;
 	
 }
