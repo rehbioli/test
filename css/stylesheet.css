@@ -1,11 +1,27 @@
 @charset "UTF-8";
 /* CSS Document */
+body {
+	margin: 0 auto;
+}
+/* Page Wrap*/
+.wrapper {
+	margin: 0 auto;
+	display: flex;
+	min-width: 100vh;
+	max-width: 1280px;
+	padding-left: 2%;
+	padding-right: 2%;
+	direction: column;
+	
+}
 /* Header */
 .top-sticky {
 	height: 35px;
     background-color: rgba(135,186,220,0.70);
     padding-top: 0px;
     width: 100%;
+	
+	
 	
 	
 }
@@ -29,17 +45,37 @@
 	color: #367fa9;
 }
 /* Jumbotron */
-#hero-banner {
-	background: url("../images/sample1.png");
-	min-height: 630px;
-	max-width: 100%;
-	background-repeat: no-repeat;
-	margin-top: -1em;
+#hero {
+    background-image: url("../images/sample1.png");
+    min-height: 600px;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    vertical-align: baseline;
+    position: relative;
+    z-index: 01;
+    margin-top: -1em;
+    margin-bottom: 50px;
+    background-attachment: fixed;
 }
+
+
 /* Top NAV */
+#hero-banner  {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 3px;
+    padding-right: 3px;
+	position: inherit;
+}
+
 #hero-banner img {
-    max-height: 35px;
-    margin: 3% 0 3% 3%;
+    max-height: 75px;
+    margin-top: -2%;
+    margin-right: 0;
+    margin-left: 3%;
+    margin-bottom: 3%;
     display: inline-block;
     float: left;
 }
@@ -52,11 +88,10 @@
     display: block;
     float: right;
     margin-right: 3%;
-    margin-top: 3%;
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-	font-weight: 500;
-	font-size: 22px;
-	
+    margin-top: 0%;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    font-weight: 500;
+    font-size: 22px;	
 }
 #hero-banner .top-nav ul a{
     text-decoration: none;
@@ -66,4 +101,61 @@
 }#hero-banner .top-nav ul a:hover{
 	color: #367fa9;
 	
+}
+/*Slogan*/
+#slogan {
+    text-align: center;
+    font-family: Avenir;
+    alignment-baseline: center;
+    margin-top: 185px;
+    color: #FFFFFF;
+    font-weight: 700;
+    word-spacing: 2px;
+}
+.tagline {
+	font-size: 54px;
+	font-weight: 700;
+}
+.tagline-b {
+	font-size: 50px;
+	font-weight: 500;
+}
+button {
+    margin-top: 10px;
+}
+/*Content Area 1*/
+#cnt1 {
+    font-family: Helvetica Neue;
+    font-weight: 500;
+    color: #156872;
+    font-size: 32px;
+    transform: matrix(1.255,0,0,1.255,0,0);
+    max-width: 99%;
+    margin-top: 50px;
+}
+.promo {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-top: 6px;
+}
+.feauture-col {
+    display: inline-block;
+    align-items: baseline;
+    width: 30%;
+}
+.feauture-col span {
+    display: block;
+    font-size: 22px;
+    align-items: baseline;
+    padding-left: 1px;
+}
+.feauture-col p {
+    font-size: 14px;
+    max-width: 80%;
+    margin-top: 0%;
+    display: inherit;
+    text-align: justify;
 }
